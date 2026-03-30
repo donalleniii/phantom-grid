@@ -1,3 +1,13 @@
 {
-  "outputs": []
+  "outputs": [
+    {
+      "title": "Pipeline Test",
+      "description": "Automated test confirming the Phantom Grid publish pipeline is working end to end.",
+      "type": "experiment",
+      "node": "heavy-thinker",
+      "date": "2026-03-30T14:05:54Z",
+      "url": "https://donalleniii.github.io/phantom-grid/2026-03-30/pipeline-test/",
+      "path": "2026-03-30/pipeline-test"
+    }
+  ]
 }
