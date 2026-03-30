@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Snake Game",
+                        "description":  "A classic snake game where the player grows by eating food while avoiding collisions.",
+                        "type":  "game",
+                        "node":  "speed-demon",
+                        "date":  "2026-03-30T09:19:00Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-03-30/snake-game/",
+                        "path":  "2026-03-30/snake-game"
+                    },
+                    {
                         "title":  "Hello World",
                         "description":  "Pipeline test with a real HTML page.",
                         "type":  "experiment",
