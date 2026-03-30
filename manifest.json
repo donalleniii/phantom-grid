@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Basic Snake Game",
+                        "description":  "Auto-published by Calabasas: basic_snake_game.js",
+                        "type":  "tool",
+                        "node":  "speed-demon",
+                        "date":  "2026-03-30T07:57:02Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-03-30/basic-snake-game/",
+                        "path":  "2026-03-30/basic-snake-game"
+                    },
+                    {
                         "title":  "Speed Demon Test",
                         "description":  "Confirming Speed Demon can publish to the Phantom Grid.",
                         "type":  "experiment",
