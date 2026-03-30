@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Hello World",
+                        "description":  "Pipeline test with a real HTML page.",
+                        "type":  "experiment",
+                        "node":  "speed-demon",
+                        "date":  "2026-03-30T08:08:27Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-03-30/hello-world/",
+                        "path":  "2026-03-30/hello-world"
+                    },
+                    {
                         "title":  "Basic Snake Game",
                         "description":  "Auto-published by Calabasas: basic_snake_game.js",
                         "type":  "tool",
