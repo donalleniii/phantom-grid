@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Can You Code A Basic Flappy Bird Game Wi",
+                        "description":  "Auto-published by Calabasas: output.js",
+                        "type":  "tool",
+                        "node":  "speed-demon",
+                        "date":  "2026-03-30T11:21:13Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-03-30/can-you-code-a-basic-flappy-bird-game-wi/",
+                        "path":  "2026-03-30/can-you-code-a-basic-flappy-bird-game-wi"
+                    },
+                    {
                         "title":  "Snake Game",
                         "description":  "A classic snake game where the player grows by eating food while avoiding collisions.",
                         "type":  "game",
