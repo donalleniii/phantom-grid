@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Wave Control</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Wave Control</h1>
+        <form id="wave-form">
+            <label for="frequency">Frequency:</label>
+            <input type="number" id="frequency" name="frequency" min="0" max="100" value="50"><br><br>
+            <label for="amplitude">Amplitude:</label>
+            <input type="number" id="amplitude" name="amplitude" min="0" max="100" value="50"><br><br>
+            <button id="submit-btn">Submit</button>
+        </form>
+        <div class="wave-container">
+            <canvas id="sine-wave"></canvas>
+            <canvas id="square-wave"></canvas>
+            <canvas id="triangle-wave"></canvas>
+        </div>
+        <button id="toggle-btn">Toggle Wave Type</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
