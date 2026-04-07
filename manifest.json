@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Chiptune Download Sound Button",
+                        "description":  "A button that triggers a retro chiptune-style download sound when pressed.",
+                        "type":  "experiment",
+                        "node":  "speed-demon",
+                        "date":  "2026-04-07T15:29:31Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-04-07/chiptune-download-sound-button/",
+                        "path":  "2026-04-07/chiptune-download-sound-button"
+                    },
+                    {
                         "title":  "Make A Basic Html Site That Lets You Con",
                         "description":  "Auto-published by Calabasas",
                         "type":  "tool",

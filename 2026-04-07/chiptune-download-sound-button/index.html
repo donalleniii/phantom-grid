@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Chiptune Download Sound</title>
+    <style>
+        body {
+            margin: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #000;
+            font-family: 'Courier New', monospace;
+        }
+
+        #downloadBtn {
+            padding: 20px 40px;
+            font-size: 24px;
+            cursor: pointer;
+            background: linear-gradient(45deg, #0f0, #0ff);
+            border: 3px solid #00b;
+            color: #fff;
+            position: relative;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            box-shadow: 0 0 15px rgba(0, 255, 255, 0.7);
+            outline: none;
+        }
+
+        #downloadBtn:hover {
+            background: linear-gradient(45deg, #0ff, #0f0);
+        }
+
+        #downloadBtn:active {
+            transform: scale(0.95);
+            box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+        }
+    </style>
+</head>
+<body>
+    <button id="downloadBtn">↓ Download</button>
+
+    <script>
+        document.getElementById('downloadBtn').addEventListener('click', function() {
+            // Create AudioContext
+            const audioContext = new (window.AudioContext || window.webkitAudioContext)();
+
+            // Sequencer pattern
+            const notes = [
+                { freq: 440, duration: 0.1 },
+                { freq: 523.25, duration: 0.1 },
+                { freq: 493.88, duration: 0.1 },
+                { freq: 659.26, duration: 0.1 },
+                { freq: 587.33, duration: 0.1 },
+                { freq: 698.46, duration: 0.1 },
+                { freq: 783.99, duration: 0.1 }
+            ];
+
+            // Gain node for volume control
+            const gainNode = audioContext.createGain();
+            gainNode.gain.setValueAtTime(0.2, audioContext.currentTime);
+
+            let currentTime = audioContext.currentTime;
+
+            notes.forEach(note => {
+                // Create oscillator for square wave
+                const oscillator = audioContext.createOscillator();
+                oscillator.type = 'square';
+                oscillator.frequency.setValueAtTime(note.freq, currentTime);
+                oscillator.connect(gainNode);
+                oscillator.start(currentTime);
+                oscillator.stop(currentTime + note.duration);
+
+                // Pitch bending effect
+                oscillator.detune.setValueAtTime(0, currentTime);
+                oscillator.detune.linearRampToValueAtTime(1200, currentTime + note.duration);
+
+                currentTime += note.duration;
+            });
+
+            // Connect gain node to destination
+            gainNode.connect(audioContext.destination);
+
+            // Visual feedback
+            this.style.background = '#f00';
+            setTimeout(() => {
+                this.style.background = 'linear-gradient(45deg, #0f0, #0ff)';
+            }, 1000);
+        });
+
+        // Handle browser audio context suspension
+        const globalAudioContext = new (window.AudioContext || window.webkitAudioContext)();
+        if (globalAudioContext.state === 'suspended') {
+            globalAudioContext.resume();
+        }
+    </script>
+</body>
+</html>
