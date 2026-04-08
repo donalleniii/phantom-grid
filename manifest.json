@@ -1,6 +1,15 @@
 {
     "outputs":  [
                     {
+                        "title":  "Sound Button Grid",
+                        "description":  "A single-page website with three buttons that trigger different sounds on click.",
+                        "type":  "experiment",
+                        "node":  "speed-demon",
+                        "date":  "2026-04-08T15:26:03Z",
+                        "url":  "https://donalleniii.github.io/phantom-grid/2026-04-08/sound-button-grid/",
+                        "path":  "2026-04-08/sound-button-grid"
+                    },
+                    {
                         "title":  "Chiptune Download Sound Button",
                         "description":  "A button that triggers a retro chiptune-style download sound when pressed.",
                         "type":  "experiment",
